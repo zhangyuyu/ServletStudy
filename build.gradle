@@ -1,0 +1,33 @@
+apply plugin: "java"
+apply plugin: "idea"
+apply plugin: "war"
+apply plugin: 'com.bmuschko.tomcat'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile "javax:javaee-api:6.0"
+
+    def tomcatVersion = '7.0.59'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
+}
+
+tomcat {
+    httpPort = 8080
+    httpsPort = 8091
+    enableSSL = true
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.bmuschko:gradle-tomcat-plugin:2.1'
+    }
+}
