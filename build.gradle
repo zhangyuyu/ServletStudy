@@ -9,7 +9,6 @@ repositories {
 
 dependencies {
     providedCompile "javax:javaee-api:6.0"
-
     def tomcatVersion = '7.0.59'
     tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
             "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
@@ -26,7 +25,6 @@ buildscript {
     repositories {
         jcenter()
     }
-
     dependencies {
         classpath 'com.bmuschko:gradle-tomcat-plugin:2.1'
     }
