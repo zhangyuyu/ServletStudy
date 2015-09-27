@@ -19,6 +19,7 @@ tomcat {
     httpPort = 8080
     httpsPort = 8091
     enableSSL = true
+    //daemon = true
 }
 
 buildscript {
@@ -26,6 +27,6 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.bmuschko:gradle-tomcat-plugin:2.1'
+        classpath 'com.bmuschko:gradle-tomcat-plugin:2.2.2'
     }
 }
