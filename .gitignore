@@ -6,3 +6,5 @@
 !settings.gradle
 !compile.sh
 !assemble.sh
+!migration.sh
+!deploy.sh
