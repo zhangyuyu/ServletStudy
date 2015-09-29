@@ -19,7 +19,7 @@ tomcat {
     httpPort = 8080
     httpsPort = 8091
     enableSSL = true
-    //daemon = true
+   // daemon = true
 }
 
 buildscript {

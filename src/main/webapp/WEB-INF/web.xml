@@ -7,12 +7,12 @@
   metadata-complete="true">
 
     <servlet>
-        <servlet-name>servlet.ServletExample</servlet-name>
-        <servlet-class>servlet.ServletExample</servlet-class>
+        <servlet-name>ServletExample</servlet-name>
+        <servlet-class>ServletExample</servlet-class>
     </servlet>
     
     <servlet-mapping>
-        <servlet-name>servlet.ServletExample</servlet-name>
+        <servlet-name>ServletExample</servlet-name>
         <url-pattern>/test</url-pattern>
     </servlet-mapping>
 
